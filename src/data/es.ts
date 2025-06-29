@@ -15,8 +15,8 @@ export const es = {
     },
     projects: sharedData.projects.map((p) => ({
         ...p,
-        ...(p.id === "task-manager" && { title: "Gestor de Tareas (App Full Stack)", description: "Aplicación para gestión de tareas con autenticación, roles, y CRUD. Backend en Laravel y frontend con React." }),
-        ...(p.id === "condo-system" && { title: "Sistema de Administración de Condominios", description: "API REST con autenticación y códigos QR para administración de invitados, construida con Node y PostgreSQL." }),
+        ...(p.id === "Veracruz" && { title: "Sitio oficial de Veracruz", description: "La página oficial del Gobierno del Estado de Veracruz es un portal institucional que ofrece acceso a información gubernamental, trámites, noticias y servicios para la ciudadanía." }),
+        ...(p.id === "ovh" && { title: "Oficina Virtual de Hacienda (OVH)", description: "La Oficina Virtual de Hacienda es una plataforma digital del Gobierno del Estado de Veracruz que permite a los ciudadanos realizar pagos electrónicos de impuestos estatales y federales coordinados. Además, ofrece servicios como validación de constancias fiscales, verificación de datos vehiculares, emisión de CFDI y atención a contribuyentes." }),
         ...(p.id === "marvel-app" && { title: "Marvel App", description: "Consulta de personajes de Marvel usando su API pública. Páginas responsivas creadas con Angular." }),
         ...(p.id === "landing-pages" && { title: "Landing Pages Freelance", description: "Sitios responsivos y optimizados para negocios locales. HTML, CSS, Bootstrap y WordPress." })
     })),

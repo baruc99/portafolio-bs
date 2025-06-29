@@ -1,29 +1,65 @@
 export const sharedData = {
     projects: [
         {
-            id: "task-manager",
-            image: "https://placehold.co/600x400",
-            technologies: ["React", "Laravel", "MySQL", "Tailwind CSS", "TypeScript"],
-            link: "https://github.com/baruc99/fullstack-task-app"
+            id: "Veracruz",
+            image: "src/assets/data/veracruz.png",
+            technologies: ["WordPress", "MySQL", "Bootstrap", "JQuery", "PHP"],
+            link: "https://www.veracruz.gob.mx/"
         },
         {
-            id: "condo-system",
-            image: "https://placehold.co/600x400",
-            technologies: ["Node.js", "Express", "PostgreSQL", "JWT", "React"],
-            link: "https://github.com/baruc99/condominio-api"
+            id: "ovh",
+            image: "src/assets/data/ovh.png",
+            technologies: ["WordPress", "MySQL", "Bootstrap", "JQuery", "PHP"],
+            link: "https://www.ovh.gob.mx/"
         },
         {
             id: "marvel-app",
-            image: "https://placehold.co/600x400",
-            technologies: ["Angular", "TypeScript", "Marvel API"],
-            link: "https://github.com/baruc99/marvel-app"
+            image: "src/assets/data/marvel-api.png",
+            technologies: ["Angular", "TypeScript", "Marvel API", "Tailwindcss"],
+            link: "https://marvel-app-ohdb.vercel.app/characters"
         },
         {
             id: "landing-pages",
             image: "https://placehold.co/600x400",
             technologies: ["HTML", "CSS", "Bootstrap", "WordPress"],
             link: "#"
-        }
+        },
+        {
+            id: "landing-pages",
+            image: "https://placehold.co/600x400",
+            technologies: ["HTML", "CSS", "Bootstrap", "WordPress"],
+            link: "#"
+        },
+        {
+            id: "landing-pages",
+            image: "https://placehold.co/600x400",
+            technologies: ["HTML", "CSS", "Bootstrap", "WordPress"],
+            link: "#"
+        },
+        {
+            id: "landing-pages",
+            image: "https://placehold.co/600x400",
+            technologies: ["HTML", "CSS", "Bootstrap", "WordPress"],
+            link: "#"
+        },
+        {
+            id: "landing-pages",
+            image: "https://placehold.co/600x400",
+            technologies: ["HTML", "CSS", "Bootstrap", "WordPress"],
+            link: "#"
+        },
+        {
+            id: "landing-pages",
+            image: "https://placehold.co/600x400",
+            technologies: ["HTML", "CSS", "Bootstrap", "WordPress"],
+            link: "#"
+        },
+        {
+            id: "landing-pages",
+            image: "https://placehold.co/600x400",
+            technologies: ["HTML", "CSS", "Bootstrap", "WordPress"],
+            link: "#"
+        },
     ],
     services: [
         {
