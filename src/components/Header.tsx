@@ -39,9 +39,13 @@ const Header: React.FC = () => {
             ))}
           </nav>
 
-          <button
+          {/* <button
             onClick={toggleLang}
             className="bg-gray-700 text-white px-3 py-1 rounded hover:bg-gray-600 text-sm"
+          > */}
+          <button
+            onClick={toggleLang}
+            className="cursor-pointer uppercase bg-gray-700 px-4 py-2 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#F44336,-0.5rem_-0.5rem_#00BCD4] transition"
           >
             {lang === 'es' ? 'EN' : 'ES'}
           </button>
