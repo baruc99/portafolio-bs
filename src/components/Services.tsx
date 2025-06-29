@@ -10,7 +10,7 @@ const Services: React.FC = () => {
       <h2 className="text-2xl font-bold mb-10">
         {lang === 'es' ? 'Mis Servicios' : 'My Services'}
       </h2>
-      <div className='grid grid-cols-2'>
+      <div className='grid md:grid-cols-2 gap-8'>
         {services.map((service) => (
           <div key={service.id} className="mb-20">
             {/* <div className="text-8xl font-bold mb-6 animate-slide-in">{service.number}</div> */}
