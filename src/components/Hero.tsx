@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
   const { intro }  = portfolioData[lang];
 
   return (
-    <section className="min-h-screen flex items-center px-6 py-20">
+    <section id='home' className="min-h-screen flex items-center px-6 py-20">
       <div className="max-w-3xl animate-fade-in">
         <h1 className="text-5xl font-bold mb-6 text-gradient">{intro.title}</h1>
         <p className="text-2xl leading-relaxed animate-slide-in" style={{ animationDelay: '0.3s' }}>

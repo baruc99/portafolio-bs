@@ -5,6 +5,15 @@ const Header: React.FC = () => {
   const { lang, toggleLang } = useLanguage();
   const { header } = portfolioData[lang];
 
+  const navLinks = [
+    { id: "home",        label: { es: "inicio",       en: "home" } },
+    { id: "work",        label: { es: "proyectos",    en: "work" } },
+    { id: "about",       label: { es: "acerca de",    en: "about" } },
+    { id: "experiences", label: { es: "experiencia",  en: "experience" } },
+    { id: "contact",     label: { es: "contacto",     en: "contact" } },
+  ];
+
+
 
 
   return (
@@ -19,21 +28,15 @@ const Header: React.FC = () => {
         </div>
         <div className="flex items-center space-x-6">
           <nav className="hidden md:flex space-x-6">
-            <a href="#home" className="first-letter:uppercase text-gray-500 hover:text-gray-300">
-              {lang === 'es' ? 'inicio' : 'home'}
-            </a>
-            <a href="#work" className="first-letter:uppercase text-gray-500 hover:text-gray-300">
-              {lang === 'es' ? 'proyectos' : 'work'}
-            </a>
-            <a href="#experience" className="first-letter:uppercase text-gray-500 hover:text-gray-300">
-              {lang === 'es' ? 'experiencia' : 'experience'}
-            </a>
-            <a href="#about" className="first-letter:uppercase text-gray-500 hover:text-gray-300">
-              {lang === 'es' ? 'acerca de' : 'about'}
-            </a>
-            <a href="#contact" className="first-letter:uppercase text-gray-500 hover:text-gray-300">
-              {lang === 'es' ? 'contacto' : 'contact'}
-            </a>
+            {navLinks.map((link) => (
+              <a
+                key={link.id}
+                href={`#${link.id}`}
+                className="first-letter:uppercase text-gray-500 hover:text-gray-300"
+              >
+                {link.label[lang]}
+              </a>
+            ))}
           </nav>
 
           <button

@@ -33,7 +33,7 @@ const App: React.FC = () => {
       <Header />
       <main>
         <Hero />
-        <Projects />
+        {/* <Projects /> */}
         <Services />
         <Work />
         <About />

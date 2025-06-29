@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useLanguage } from '../context/LanguageContext'; // Asumiendo que usas un context para idioma
+import { useLanguage } from '../context/LanguageContext'; 
 import { portfolioData } from '../data/portfolio-data';
 
 const Experience: React.FC = () => {
@@ -9,7 +9,7 @@ const Experience: React.FC = () => {
     const { experiences } = portfolioData[lang];
 
     return (
-        <section className="scroll-trigger py-20 px-6 bg-gray-900">
+        <section id='experiences' className="scroll-trigger py-20 px-6">
             <h2 className="text-3xl font-bold mb-8">
                 {lang === 'es' ? 'Experiencia Profesional' : 'Professional Experience'}
             </h2>

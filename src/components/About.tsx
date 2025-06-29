@@ -6,7 +6,7 @@ const About: React.FC = () => {
   const { about } = portfolioData[lang];
 
   return (
-    <section className="py-20 px-6">
+    <section id='about' className="py-20 px-6">
       <h2 className="text-2xl font-bold mb-10">
         {lang === 'es' ? 'Acerca de mí' : 'About Me'}
       </h2>
