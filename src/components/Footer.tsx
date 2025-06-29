@@ -14,17 +14,19 @@ const Footer: React.FC = () => {
           {/* <p>{contact.phone}</p> */}
         </div>
         <div>
-          <h3 className="text-2xl font-bold mb-4">
+          <h3 className="text-xl font-bold mb-4">
             {lang === 'en' ? 'Looking for a front-end developer?' : '¿Buscas un desarrollador full stack?'}
           </h3>
-          <a href={`mailto:${contact.email}`}>
-            <button className="px-6 py-2 bg-white text-black rounded-full">
-              {lang === 'en' ? 'Let\'s talk' : 'Hablemos'}
-            </button>
-          </a>
+          <div className="flex justify-center">
+            <a href={`mailto:${contact.email}`}>
+              <button className="px-6 py-2 bg-white text-black rounded-full">
+                {lang === 'en' ? 'Let\'s talk' : 'Hablemos'}
+              </button>
+            </a>
+          </div>
         </div>
       </div>
-      <div className="flex flex-wrap space-x-4 mt-12">
+      <div className="flex flex-wrap justify-center items-center space-x-4 mt-12">
         {Object.entries(social).map(([key, value]) =>
           value ? (
             <a
