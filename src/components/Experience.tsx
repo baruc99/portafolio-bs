@@ -10,10 +10,10 @@ const Experience: React.FC = () => {
 
     return (
         <section id='experiences' className="scroll-trigger py-20 px-6">
-            <h2 className="text-3xl font-bold mb-8">
+            <h2 className="text-3xl font-bold mb-8 animate-slide-in">
                 {lang === 'es' ? 'Experiencia Profesional' : 'Professional Experience'}
             </h2>
-            <div className="space-y-6">
+            <div className="space-y-6 animate-slide-in">
                 {experiences.map((exp, index) => (
                     <div key={index}>
                         <h3 className="text-xl font-semibold">

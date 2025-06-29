@@ -7,7 +7,7 @@ const Projects: React.FC = () => {
 
   return (
     <section className="py-20 px-6">
-      <h2 className="text-2xl font-bold mb-10">
+      <h2 className="text-2xl font-bold mb-10 animate-slide-in">
         {lang === 'es' ? ' Proyectos Destacados' : ' Featured Projects'}  
       </h2>
       <div className="grid md:grid-cols-2 gap-8">

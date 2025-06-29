@@ -9,7 +9,7 @@ const Work: React.FC = () => {
   return (
     <section id="work" className="py-20 px-6 bg-gray-900">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold mb-12">
+        <h2 className="text-4xl font-bold mb-12 animate-slide-in">
           {lang === 'es' ? 'Mis Proyectos' : 'My Projects'}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

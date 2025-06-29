@@ -34,14 +34,14 @@ const Contact: React.FC = () => {
             <img src={workteamImage} alt="Equipo de trabajo" />
           </div>
           <div>
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-4xl font-bold mb-6 animate-slide-in">
               {lang === 'es' ? 'Trabajemos juntos' : `Let's Work Together`}
             </h2>
-            <p className="text-lg text-gray-300 mb-8">
+            <p className="text-lg text-gray-300 mb-8 animate-slide-in">
               {lang === 'es' ? '¿Tiene un proyecto en mente? Hablemos de cómo podemos ayudarle a hacer realidad sus ideas.' :
                 `Have a project in mind? Let's chat about how we can help bring your ideas to life.`}
             </p>
-            <div className="space-y-4 mb-8">
+            <div className="space-y-4 mb-8 animate-slide-in">
               <p className="flex items-center gap-2">
                 <span className="text-gray-400">
                   {lang === 'es' ? 'Correo electrónico:' : 'Email:'}
@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
                 </a>
               </p> */}
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 animate-slide-in">
               {Object.entries(social).map(([platform, link]) => (
                 <a
                   key={platform}

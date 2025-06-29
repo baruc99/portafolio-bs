@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
       <div className="flex justify-between items-start">
         <div>
           {/* <h2 className="text-xl font-bold mb-4">YourName.dev</h2> */}
-          <p>{contact.email}</p>
+          {/* <p>{contact.email}</p> */}
           {/* <p>{contact.phone}</p> */}
         </div>
         <div>
