@@ -19,8 +19,8 @@ const Experience: React.FC = () => {
                         <h3 className="text-xl font-semibold">
                             {exp.role} - {exp.company}
                         </h3>
-                        <p className="text-sm text-gray-400">{exp.period}</p>
-                        <p>{exp.description}</p>
+                        <p className="text-sm px-8 text-gray-400">{exp.period}</p>
+                        <p className='ms-8'>{exp.description}</p>
                     </div>
                 ))}
             </div>
