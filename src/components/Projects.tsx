@@ -1,11 +1,15 @@
 import { portfolioData } from '../data/portfolio-data';
+import { useLanguage } from '../context/LanguageContext';
 
 const Projects: React.FC = () => {
-  const { projects } = portfolioData;
+  const { lang } = useLanguage();
+  const { projects } = portfolioData[lang];
 
   return (
     <section className="py-20 px-6">
-      <h2 className="text-2xl font-bold mb-10">Featured Projects</h2>
+      <h2 className="text-2xl font-bold mb-10">
+        {lang === 'es' ? ' Proyectos Destacados' : ' Featured Projects'}  
+      </h2>
       <div className="grid md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
           <div key={index} className="relative rounded-lg overflow-hidden">

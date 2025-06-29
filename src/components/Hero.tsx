@@ -1,7 +1,9 @@
 import { portfolioData } from '../data/portfolio-data';
+import { useLanguage } from '../context/LanguageContext';
 
 const Hero: React.FC = () => {
-  const { intro } = portfolioData;
+  const { lang } = useLanguage();
+  const { intro }  = portfolioData[lang];
 
   return (
     <section className="min-h-screen flex items-center px-6 py-20">
@@ -10,14 +12,14 @@ const Hero: React.FC = () => {
         <p className="text-2xl leading-relaxed animate-slide-in" style={{ animationDelay: '0.3s' }}>
           {intro.description}
         </p>
-        <div className="mt-8 flex gap-4" style={{ animationDelay: '0.6s' }}>
+        {/* <div className="mt-8 flex gap-4" style={{ animationDelay: '0.6s' }}>
           <button className="px-8 py-3 bg-white text-black rounded-full hover-lift">
-            View Projects
+            { lang === 'es' ? ' Ver Proyectos' : 'View Projects' }
           </button>
           <button className="px-8 py-3 border border-white rounded-full hover-lift">
-            Contact Me
+            { lang === 'es' ? ' Contactarme' : 'Contact Me' }
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

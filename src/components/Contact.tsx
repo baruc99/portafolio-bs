@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { portfolioData } from '../data/portfolio-data';
+import { useLanguage } from '../context/LanguageContext';
 
 const Contact: React.FC = () => {
-  const { contact, social } = portfolioData;
+  const { lang } = useLanguage();
+  const { contact, social } = portfolioData[lang];
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -27,23 +29,28 @@ const Contact: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-4xl font-bold mb-6">Let's Work Together</h2>
+            <h2 className="text-4xl font-bold mb-6">
+              {lang === 'es' ? 'Trabajemos juntos' : `Let's Work Together`}
+            </h2>
             <p className="text-lg text-gray-300 mb-8">
-              Have a project in mind? Let's chat about how we can help bring your ideas to life.
+              {lang === 'es' ? '¿Tiene un proyecto en mente? Hablemos de cómo podemos ayudarle a hacer realidad sus ideas.' :
+                `Have a project in mind? Let's chat about how we can help bring your ideas to life.`}
             </p>
             <div className="space-y-4 mb-8">
               <p className="flex items-center gap-2">
-                <span className="text-gray-400">Email:</span>
+                <span className="text-gray-400">
+                  {lang === 'es' ? 'Correo electrónico:' : 'Email:'}
+                </span>
                 <a href={`mailto:${contact.email}`} className="hover:text-gray-300">
                   {contact.email}
                 </a>
               </p>
-              <p className="flex items-center gap-2">
+              {/* <p className="flex items-center gap-2">
                 <span className="text-gray-400">Phone:</span>
                 <a href={`tel:${contact.phone}`} className="hover:text-gray-300">
                   {contact.phone}
                 </a>
-              </p>
+              </p> */}
             </div>
             <div className="flex gap-4">
               {Object.entries(social).map(([platform, link]) => (
@@ -63,7 +70,7 @@ const Contact: React.FC = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
-                  Name
+                  {lang === 'es' ? 'Nombre' : 'Name'}                  
                 </label>
                 <input
                   type="text"
@@ -77,7 +84,7 @@ const Contact: React.FC = () => {
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium mb-2">
-                  Email
+                  {lang === 'es' ? 'Correo Electrónico' : 'Email'}
                 </label>
                 <input
                   type="email"
@@ -91,7 +98,8 @@ const Contact: React.FC = () => {
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-2">
-                  Message
+                  {lang === 'es' ? 'Mensaje' : 'Message'}
+
                 </label>
                 <textarea
                   id="message"
@@ -107,7 +115,7 @@ const Contact: React.FC = () => {
                 type="submit"
                 className="w-full px-6 py-3 bg-white text-black font-medium rounded-lg hover:bg-gray-200 transition-colors"
               >
-                Send Message
+                { lang === 'es' ? 'Enviar Mensaje' : 'Send Message' }
               </button>
             </form>
           </div>

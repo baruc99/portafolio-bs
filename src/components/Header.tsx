@@ -1,25 +1,50 @@
-import React from 'react';
 import { portfolioData } from '../data/portfolio-data';
+import { useLanguage } from '../context/LanguageContext';
 
 const Header: React.FC = () => {
-  const { header } = portfolioData;
-  
+  const { lang, toggleLang } = useLanguage();
+  const { header } = portfolioData[lang];
+
+
+
   return (
-    <header className="flex justify-between items-center p-6">
-      <div className="flex items-center space-x-2">
-        <h1 className="text-xl font-bold">YourName.dev</h1>
-        <p className="text-white text-sm text-gray-500">
-          {header.title}<br />
-          {header.subtitle}
-        </p>
-      </div>
-      <nav className="hidden md:flex space-x-6">
-        <a href="#home" className="text-gray-500 hover:text-gray-300">home</a>
-        <a href="#work" className="text-gray-500 hover:text-gray-300">work</a>
-        <a href="#about" className="text-gray-500 hover:text-gray-300">about</a>
-        <a href="#contact" className="text-gray-500 hover:text-gray-300">contact</a>
-      </nav>
-    </header>
+    <div className='fixed top-0 left-0 w-full bg-black z-50'>
+      <header className="flex justify-between items-center p-6">
+        <div className="flex items-center space-x-2">
+          {/* <h1 className="text-xl font-bold">YourName.dev</h1> */}
+          <p className="text-sm text-gray-500">
+            {header.title}<br />
+            {header.subtitle}
+          </p>
+        </div>
+        <div className="flex items-center space-x-6">
+          <nav className="hidden md:flex space-x-6">
+            <a href="#home" className="first-letter:uppercase text-gray-500 hover:text-gray-300">
+              {lang === 'es' ? 'inicio' : 'home'}
+            </a>
+            <a href="#work" className="first-letter:uppercase text-gray-500 hover:text-gray-300">
+              {lang === 'es' ? 'proyectos' : 'work'}
+            </a>
+            <a href="#experience" className="first-letter:uppercase text-gray-500 hover:text-gray-300">
+              {lang === 'es' ? 'experiencia' : 'experience'}
+            </a>
+            <a href="#about" className="first-letter:uppercase text-gray-500 hover:text-gray-300">
+              {lang === 'es' ? 'acerca de' : 'about'}
+            </a>
+            <a href="#contact" className="first-letter:uppercase text-gray-500 hover:text-gray-300">
+              {lang === 'es' ? 'contacto' : 'contact'}
+            </a>
+          </nav>
+
+          <button
+            onClick={toggleLang}
+            className="bg-gray-700 text-white px-3 py-1 rounded hover:bg-gray-600 text-sm"
+          >
+            {lang === 'es' ? 'EN' : 'ES'}
+          </button>
+        </div>
+      </header>
+    </div>
   );
 };
 
