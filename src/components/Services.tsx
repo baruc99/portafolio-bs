@@ -15,7 +15,7 @@ const Services: React.FC = () => {
           <div key={service.id} className="mb-20">
             {/* <div className="text-8xl font-bold mb-6 animate-slide-in">{service.number}</div> */}
             <h3 className="text-3xl font-bold mb-4 animate-slide-in">{service.title}</h3>
-            <p className="mb-8 max-w-3xl">{service.description}</p>
+            <p className="mb-8 max-w-3xl text-justify">{service.description}</p>
             <div className="space-y-2">
               {service.details?.map((detail, index) => (
                 <div key={index} className="flex items-center space-x-2 animate-slide-in">
