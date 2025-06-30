@@ -2,7 +2,7 @@ export const sharedData = {
     projects: [
         {
             id: "Veracruz",
-            image: "../assets/data/veracruz.png",
+            image: "../assets/more/veracruz.png",
             technologies: ["WordPress", "MySQL", "Bootstrap", "JQuery", "PHP"],
             link: "https://www.veracruz.gob.mx/"
         },
