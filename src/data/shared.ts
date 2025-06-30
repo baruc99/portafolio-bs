@@ -2,19 +2,19 @@ export const sharedData = {
     projects: [
         {
             id: "Veracruz",
-            image: "../assets/data/veracruz.png",
+            image: "src/assets/data/veracruz.png",
             technologies: ["WordPress", "MySQL", "Bootstrap", "JQuery", "PHP"],
             link: "https://www.veracruz.gob.mx/"
         },
         {
             id: "ovh",
-            image: "../assets/data/ovh.png",
+            image: "src/assets/data/ovh.png",
             technologies: ["WordPress", "MySQL", "Bootstrap", "JQuery", "PHP"],
             link: "https://www.ovh.gob.mx/"
         },
         {
             id: "marvel-app",
-            image: "../assets/data/marvel-api.png",
+            image: "src/assets/data/marvel-api.png",
             technologies: ["Angular", "TypeScript", "Marvel API", "Tailwindcss"],
             link: "https://marvel-app-ohdb.vercel.app/characters"
         },
