@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <img src={workteamImage} alt="Equipo de trabajo" />
+            <img src={workteamImage} alt="Equipo de trabajo" loading="lazy" />
           </div>
           <div>
             <h2 className="text-4xl font-bold mb-6 animate-slide-in">
