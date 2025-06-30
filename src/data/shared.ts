@@ -2,7 +2,7 @@ export const sharedData = {
     projects: [
         {
             id: "Veracruz",
-            image: "/images/proyect/marvel-api.png",
+            image: "/images/proyect/veracruz.png",
             technologies: ["WordPress", "MySQL", "Bootstrap", "JQuery", "PHP"],
             link: "https://www.veracruz.gob.mx/"
         },
@@ -13,53 +13,53 @@ export const sharedData = {
             link: "https://www.ovh.gob.mx/"
         },
         {
+            id: "cuartoinformedegobierno",
+            image: "/images/proyect/cuartoinformedegobierno.png",
+            technologies: ["HTML", "CSS", "Bootstrap", "WordPress"],
+            link: "https://www.veracruz.gob.mx/cuartoinformedegobierno/"
+        },
+        {
+            id: "quintoinformedegobierno",
+            image: "/images/proyect/quintoinformedegobierno.png",
+            technologies: ["HTML", "CSS", "Bootstrap", "WordPress"],
+            link: "https://www.veracruz.gob.mx/quintoinformedegobierno/"
+        },
+        {
+            id: "sextoinformedegobierno",
+            image: "/images/proyect/sextoinformedegobierno.png",
+            technologies: ["HTML", "CSS", "Bootstrap", "WordPress"],
+            link: "https://www.veracruz.gob.mx/sextoinformedegobierno/"
+        },
+        {
+            id: "wtc",
+            image: "/images/proyect/wtc.png",
+            technologies: ["HTML", "CSS", "Bootstrap", "WordPress"],
+            link: "http://wtc.veracruz.gob.mx/"
+        },
+        {
             id: "marvel-app",
-            image: "/images/proyect/veracruz.png",
+            image: "/images/proyect/marvel-api.png",
             technologies: ["Angular", "TypeScript", "Marvel API", "Tailwindcss"],
             link: "https://marvel-app-ohdb.vercel.app/characters"
         },
         {
-            id: "landing-pages",
-            image: "https://placehold.co/600x400",
+            id: "unpca",
+            image: "/images/proyect/unpca.png",
             technologies: ["HTML", "CSS", "Bootstrap", "WordPress"],
-            link: "#"
+            link: "https://unpca.org.mx/"
         },
-        {
-            id: "landing-pages",
-            image: "https://placehold.co/600x400",
-            technologies: ["HTML", "CSS", "Bootstrap", "WordPress"],
-            link: "#"
-        },
-        {
-            id: "landing-pages",
-            image: "https://placehold.co/600x400",
-            technologies: ["HTML", "CSS", "Bootstrap", "WordPress"],
-            link: "#"
-        },
-        {
-            id: "landing-pages",
-            image: "https://placehold.co/600x400",
-            technologies: ["HTML", "CSS", "Bootstrap", "WordPress"],
-            link: "#"
-        },
-        {
-            id: "landing-pages",
-            image: "https://placehold.co/600x400",
-            technologies: ["HTML", "CSS", "Bootstrap", "WordPress"],
-            link: "#"
-        },
-        {
-            id: "landing-pages",
-            image: "https://placehold.co/600x400",
-            technologies: ["HTML", "CSS", "Bootstrap", "WordPress"],
-            link: "#"
-        },
-        {
-            id: "landing-pages",
-            image: "https://placehold.co/600x400",
-            technologies: ["HTML", "CSS", "Bootstrap", "WordPress"],
-            link: "#"
-        },
+        // {
+        //     id: "landing-pages",
+        //     image: "https://placehold.co/600x400",
+        //     technologies: ["HTML", "CSS", "Bootstrap", "WordPress"],
+        //     link: "#"
+        // },
+        // {
+        //     id: "landing-pages",
+        //     image: "https://placehold.co/600x400",
+        //     technologies: ["HTML", "CSS", "Bootstrap", "WordPress"],
+        //     link: "#"
+        // },
     ],
     services: [
         {
