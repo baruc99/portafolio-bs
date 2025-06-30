@@ -14,10 +14,30 @@ export const en = {
   },
   projects: sharedData.projects.map((p) => ({
     ...p,
-    ...(p.id === "task-manager" && { title: "Task Manager (Full Stack App)", description: "Task management app with authentication, user roles, and CRUD. Backend in Laravel, frontend in React." }),
-    ...(p.id === "condo-system" && { title: "Condominium Management System", description: "REST API with authentication and QR codes for guest control, built with Node and PostgreSQL." }),
-    ...(p.id === "marvel-app" && { title: "Marvel App", description: "Character search using Marvel's public API. Responsive pages built with Angular." }),
-    ...(p.id === "landing-pages" && { title: "Freelance Landing Pages", description: "Responsive, optimized websites for local businesses using HTML, CSS, Bootstrap and WordPress." })
+    ...(p.id === "Veracruz" && {
+      title: "Official Website of Veracruz",
+      description: "The official website of the Government of the State of Veracruz is an institutional portal that provides access to government information, procedures, news, and citizen services."
+    }),
+    ...(p.id === "ovh" && {
+      title: "Virtual Tax Office (OVH)",
+      description: "The Virtual Tax Office is a digital platform from the Government of the State of Veracruz that allows citizens to make electronic payments of state and federally coordinated taxes. It also offers services such as validation of tax certificates, vehicle data verification, CFDI issuance, and taxpayer support."
+    }),
+    ...(p.id === "cuartoinformedegobierno" && {
+      title: "Fourth Government Report – Veracruz",
+      description: "This microsite is part of the official portal of the Government of the State of Veracruz and is dedicated to presenting the Fourth Government Report for the 2021–2022 period. Its purpose is to ensure transparency in public administration, showcase progress in social, economic, and infrastructure policies, and be accountable to citizens."
+    }),
+    ...(p.id === "quintoinformedegobierno" && {
+      title: "Fifth Government Report – Veracruz",
+      description: "This microsite is part of the official portal of the Government of the State of Veracruz and presents the Fifth Government Report of Governor Cuitláhuac García Jiménez. Its aim is to inform citizens about progress, public works, and actions taken during the fiscal year, with an emphasis on health, infrastructure, education, and social development."
+    }),
+    ...(p.id === "sextoinformedegobierno" && {
+      title: "Sixth Government Report – Veracruz",
+      description: "This site is part of the official portal of the Government of the State of Veracruz and presents the Sixth Report of Results from Governor Cuitláhuac García Jiménez. Its goal is to document and ensure transparency regarding the works, programs, and actions carried out over six years of administration, in a visual and accessible format."
+    }),
+    ...(p.id === "wtc" && {
+      title: "World Trade Center Veracruz",
+      description: "The World Trade Center Veracruz is a world-class venue affiliated with the World Trade Center Association (WTCA), designed to host congresses, conventions, exhibitions, and corporate events. Located in Boca del Río, Veracruz, this center is part of a global network of over 300 WTCs in 100 countries, committed to promoting trade, investment, and technological and cultural exchange."
+    }),
   })),
   services: sharedData.services.map(s => ({
     ...s,
